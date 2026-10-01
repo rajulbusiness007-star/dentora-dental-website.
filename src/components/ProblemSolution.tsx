@@ -17,10 +17,11 @@ export function ProblemSolution() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* LEFT: Confident Patient Smile Photo with Floating Technology Badge */}
+          {/* LEFT: Clinic Operatory Photo with Floating Technology Badge */}
           <div className="lg:col-span-6 relative">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
+              {/* Dot matrix pattern on the left */}
               <div 
                 className="absolute -left-6 top-1/4 grid grid-cols-4 gap-2 z-0 opacity-60 pointer-events-none"
                 aria-hidden="true"
@@ -30,18 +31,19 @@ export function ProblemSolution() {
                 ))}
               </div>
 
-              {/* Main Patient Smile Image — Replaces dental chair/operatory photo */}
+              {/* Main Clinic Operatory Image */}
               <div className="relative rounded-[32px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-slate-100">
                 <img
-                  src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=85"
-                  alt="Confident patient with a beautiful healthy smile after dental treatment"
+                  src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1200&q=85"
+                  alt="State of the Art Dental Clinic Operatory"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
               </div>
 
-              {/* Floating Circular Badge: State-of-the-Art Technology */}
+              {/* Floating Circular Badge: "State-of-the-Art Technology" */}
               <div className="absolute -bottom-6 -left-6 sm:bottom-8 sm:-left-8 w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-slate-900 text-white flex flex-col items-center justify-center p-3 text-center shadow-2xl border-4 border-white">
+                {/* Tooth Icon */}
                 <svg className="w-7 h-7 sm:w-8 sm:h-8 text-blue-400 mb-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 2C8 2 5 5 5 9c0 3 1.5 6 3 9 1 2 1.5 4 4 4s3-2 4-4c1.5-3 3-6 3-9 0-4-3-7-7-7z" />
                   <path d="M9 9c0 1.5 1.5 2.5 3 2.5s3-1 3-2.5" />
@@ -57,6 +59,7 @@ export function ProblemSolution() {
           {/* RIGHT: Advanced Care Copy & Features */}
           <div className="lg:col-span-6 flex flex-col justify-center">
             
+            {/* Eyebrow */}
             <div className="flex items-center gap-2 mb-3">
               <span className="w-5 h-[2px] bg-blue-600" />
               <span className="text-xs font-bold uppercase tracking-widest text-blue-600">
@@ -64,15 +67,18 @@ export function ProblemSolution() {
               </span>
             </div>
 
+            {/* Main Headline */}
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-5">
               State-of-the-Art <br />
               Dental Care
             </h2>
 
+            {/* Description */}
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
               We combine advanced technology with a gentle touch to deliver exceptional results. From routine cleanings to complex treatments, we&apos;ve got you covered.
             </p>
 
+            {/* Features Checklist */}
             <div className="space-y-3.5 mb-9">
               {features.map((feature, i) => (
                 <div key={i} className="flex items-center gap-3">
@@ -84,6 +90,7 @@ export function ProblemSolution() {
               ))}
             </div>
 
+            {/* CTA Button */}
             <div>
               <button
                 type="button"
