@@ -17,7 +17,7 @@ export function ProblemSolution() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* LEFT: Clinic Operatory Photo with Floating Technology Badge */}
+          {/* LEFT: Confident Patient Smile Photo with Floating Technology Badge */}
           <div className="lg:col-span-6 relative">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
@@ -30,11 +30,11 @@ export function ProblemSolution() {
                 ))}
               </div>
 
-              {/* Main Clinic Operatory Image */}
+              {/* Main Patient Smile Image — Replaces dental chair/operatory photo */}
               <div className="relative rounded-[32px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-slate-100">
                 <img
-                  src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1200&q=85"
-                  alt="State of the Art Dental Clinic Operatory"
+                  src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=85"
+                  alt="Confident patient with a beautiful healthy smile after dental treatment"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
