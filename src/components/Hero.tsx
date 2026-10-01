@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, ArrowUpRight, Play, Star, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useClinic } from '../context/ClinicContext';
+import heroImg from '../assets/dentora-hero.jpg';
 
 export function Hero() {
   const { openBooking } = useClinic();
@@ -9,7 +10,6 @@ export function Hero() {
   const [videoOpen, setVideoOpen] = useState<boolean>(false);
 
   const totalSlides = 8;
-  const heroImg = 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1920&q=85';
 
   const servicePills = [
     { id: 'checkup', label: 'Dental Checkup' },
@@ -40,14 +40,14 @@ export function Hero() {
       {/* 1. DENTORA CINEMATIC HERO CARD */}
       <section className="relative rounded-[32px] sm:rounded-[44px] overflow-hidden shadow-2xl min-h-[640px] sm:min-h-[720px] lg:min-h-[760px] flex flex-col justify-between p-6 sm:p-10 lg:p-12 text-white bg-slate-950 isolate">
         
-        {/* Full-bleed Background Photograph */}
+        {/* Full-bleed Background Photograph: Girl smiling reclining in chair while doctor inspects with mirror */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src={heroImg}
             alt="Smiling young woman reclining in dental chair examined by doctor with dental mirror"
             className="w-full h-full object-cover object-[75%_center] lg:object-center brightness-105 contrast-105"
           />
-          {/* Directional scrim: dark left side for text readability, clear right side for patient & dentist */}
+          {/* Directional scrim: dark left side for text readability, clear right side for the smiling girl & dentist */}
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/65 to-slate-950/15" />
           {/* Bottom scrim for pills & status bar */}
           <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-t from-slate-950/95 via-slate-950/40 to-transparent" />
@@ -172,7 +172,7 @@ export function Hero() {
 
                 <div className="flex items-center justify-between text-[11px] font-bold border-t border-white/15 pt-2">
                   <span className="text-amber-400 flex items-center gap-1">
-                    ★ <span className="text-white">4.9 [Rating]</span>
+                    â˜… <span className="text-white">4.9 [Rating]</span>
                   </span>
                   <ArrowUpRight className="w-3.5 h-3.5 text-white/80 group-hover:text-[#14b8a6] group-hover:translate-x-0.5 transition-transform" />
                 </div>
